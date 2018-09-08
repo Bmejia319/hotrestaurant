@@ -55,10 +55,31 @@
         <br>
         <a href ="/api/tables">API Table Link</a> 
          | 
-         <a href ="/api/waitlist"> API Wait List</a>
+        <a href ="/api/waitlist"> API Wait List</a>
       </div>
     </div>
   </div>
+  
+  <script type="text/javascript">
+    // Question: What does this code do?
+    $("#add-btn").on("click", function(event) {
+      event.preventDefault();
+      var newReservation = {
+        name: $("#name").val().trim(),
+        phoneNumber: $("#phoneNumber").val().trim(),
+        email: $("#email").val().trim(),
+        uniqueId: $("#uniqueId").val().trim()
+      };
+      
+
+      // Question: What does this code do??
+      $.post("/api/tables", newReservation)
+        .then(function(data) {
+          console.log("reserve.html", data);
+          alert("Adding reservation");
+        });
+    });
+  </script>
   
 </body>
 </html>
