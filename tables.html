@@ -79,12 +79,12 @@
 
       $.get("/api/reserve/" + searchedCharacter, function(data) {
         console.log(data);
-        if (data) {
+        if (data){
           $("#stats").show();
           $("#guess-name").text(data.name);
-          $("#guess-email").text(data.role);
-          $("#guess-phone").text(data.age);
-          $("#id").text(data.forcePoints);
+          $("#guess-email").text(data.email);
+          $("#guess-phone").text(data.phone);
+          $("#id").text(data.id);
         }
         else {
           $("#guess-name").text("no!");
