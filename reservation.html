@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hot Resturant - Reserve</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="container" style = "margin: auto">
+    <div class="jumbotron">
+      <h1 style = "text-align: center"> <i class="fas fa-fire"></i> Hot Resturant</h1>
+      <hr>
+      <h3 style = "text-align: center">Make your reservation</h3>
+      <br>
+      <div class = "btns" style="text-align: center">
+      <a href="/tables"><button class="btn btn-warning btn-lg"><span class="fas fa-utensils"></span> View Tables</button></a>
+      <a href="/reserve"><button class="btn btn-danger btn-lg"><span class="fas fa-home"></span></button></a>
+      </div>  
+    </div>
+    <div class="row">
+      <div class="col-12">
+            <div class="card mb-4">
+                    <div class="card-header">
+                      <h3><strong>Table reservation</strong></h3>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                 <label for="exampleInputName">Name:</label>
+                                <input type="password" class="form-control" id="inputName" placeholder="Name">
+                            </div> 
+                            <div class="form-group">
+                                    <label for="exampleInputNumber">Phone Number:</label>
+                                   <input type="password" class="form-control" id="inputNumber" placeholder="Phone Number">
+                            </div>       
+                            <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                    <label for="exampleInputId">Unique ID:</label>
+                                   <input type="password" class="form-control" id="inputUniqueId" placeholder="Unique ID">
+                            </div>       
+                                  
+                                  <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                      </div>
+                    </div>
+                  </div>
+        <br>
+        <a href ="/api/tables">API Table Link</a> 
+         | 
+         <a href ="/api/waitlist"> API Wait List</a>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
